@@ -1,0 +1,79 @@
+/* 11. CSS Reset */
+
+section, aside, figure, figcaption {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* 13. Style rule for aside element within mobile viewport */
+
+@media screen and (max-width: 767px) {
+    aside {
+        text-align: center;
+        font-size: 1.5em;
+        font-weight: bold;
+        color: #373684;
+        text-shadow: 3px 3px 10px #8280cb;
+    }
+}
+
+/* 14. Style rule for figure element within mobile viewport */
+
+@media screen and (max-width: 767px) {
+    figure {
+        position: relative;
+        max-width: 275px;
+        margin: 2% auto;
+        border: 8px solid #373684;
+    }
+}
+
+/* 15. Style rule for figcaption element within mobile viewport */
+
+@media screen and (max-width: 767px) {
+    figcaption {
+        position: absolute;
+        bottom: 0;
+        background: rgba(55, 54, 132, 0.7);
+        color: #fff;
+        width: 100%;
+        padding: 5% 0;
+        text-align: center;
+        font-family: Verdana, sans-serif;
+        font-size: 1.2em;
+    }
+}
+
+/* 17. Style rule for aside element grid column value */
+
+aside {
+    grid-column: 1 / span 2;
+}
+
+/* 18. Style rule for grid template columns in desktop media query */
+
+@media screen and (min-width: 768px) {
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 20px;
+    }
+}
+
+/* 19. Style rule for font size in figcaption element */
+
+figcaption {
+    font-size: 1em;
+}
+
+/* 20. Style rule for aside element grid column value */
+
+@media screen and (min-width: 768px) {
+    aside {
+        grid-column: 1 / span 4;
+    }
+}
